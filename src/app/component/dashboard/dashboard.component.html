@@ -1,0 +1,20 @@
+
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      <small></small>
+    </h1>
+    <ol class="breadcrumb">
+    </ol>
+    <h4 class="dasboard_company_header">Select Company </h4>
+    <div class="dasboard_company_details" *ngFor="let user of userDetails">
+        
+      <button type="button" (click)="getModules(user)" class="btn btn-primary btn-lg btn-block">{{user.Map_company_Name}}</button><br/>
+    </div>
+  </section>
+</div>
+
+
+
+

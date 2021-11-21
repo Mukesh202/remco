@@ -1,0 +1,25 @@
+
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h4>
+      <span class="company-heading-color">{{userModuleName.CompanyName}}</span>  <i class="fa fa-angle-double-right"></i><span class="company-heading-color"> {{userModuleName.Module}}</span>
+      <i *ngIf='showRightArrow' class="fa fa-angle-double-right"></i> <span class="company-heading-color">{{varUserBranch}}</span>
+      <i *ngIf='showRightArrow' class="fa fa-angle-double-right"></i> <span class="company-heading-color">{{varUserRole}}</span>
+      <small></small>
+    </h4>
+
+    <ol class="breadcrumb">
+      <li class="active"><a  (click)="getUserDetails()"><span class="breadcrumbAnchorLink">Company</span></a></li>
+      <li class="active"><a  (click)="getModuleDetails()"><span class="breadcrumbAnchorLink">Module</span></a></li>
+      <li class="active"><a *ngIf='hideSpanlink' (click)="getBranchDetails()"><span class="breadcrumbAnchorLink">Branch</span></a><span *ngIf="hideSpan" class="breadcrumbAnchor">Branches</span></li>
+    </ol>
+    <h4 class="user_branch_header" *ngIf="showBranch" >Select Branch </h4>
+    <div class="user_branch_details"   *ngFor="let branch of userBranches" >
+      <button type="button" *ngIf="showBranch" (click)="enterInBranch(branch)" class="btn btn-primary btn-sm ">{{branch.Map_location_Desc}}</button><br/>
+    </div>
+  </section>
+</div>
+
+
+

@@ -1,0 +1,26 @@
+.user_branch_details {
+  width: auto;
+  margin: auto;
+  display: inline-block;
+  padding-right: 5px;
+  padding-top: 5px;
+
+}
+.user_branch_header {
+  width: 100%;
+  text-align: center;
+  color: #000000;
+}
+.company-heading-color{
+  color: #000000;
+}
+.breadcrumbAnchorLink{
+  color:#000000;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.breadcrumbAnchor{
+  color:gray;
+  font-size: 14px;
+}

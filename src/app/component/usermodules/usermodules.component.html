@@ -1,0 +1,21 @@
+
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h4>
+      <span class="company-heading-color"> {{userCompanyName.Map_company_Name}}</span>
+      <small></small>
+    </h4>
+
+    <ol class="breadcrumb">
+
+      <li class="active"><a class="breadcrumbAnchorLink" (click)="getCompanyList()"><span class="breadcrumbAnchorLink">Company</span></a></li>
+      <li class="active"><span class="breadcrumbAnchor">Module</span></li>
+    </ol>
+    <h4 class="user_branch_header">Select Module </h4>
+    <div class="user_branch_details" *ngFor="let module of userModules">
+      <button type="button" (click)="getBranches(module)" class="btn btn-primary btn-sm ">{{module.Module}}</button><br/>
+    </div>
+  </section>
+</div>
+

@@ -1,0 +1,6 @@
+{
+    "git.ignoreLimitWarning": true,
+    "atlascode.jira.workingSite": {
+        "baseUrlSuffix": "atlassian.net"
+    }
+}
